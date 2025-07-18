@@ -1,0 +1,78 @@
+body {
+    background-color: rgba(165, 199, 255, 0.906);
+    text-align: center;
+    font-family: "comic Sans MS", Cursive, sans-sherif;
+}
+
+header {
+    background: linear-gradient(to right, #019cb1, #00e1ff);
+    padding: 2rem;
+    position: relative;
+}
+
+.bouton-mode {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.contenu-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+body.mode-sombre {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.contenu-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 3s ease, transform 3s ease;
+}
+
+.contenu-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-cadre {
+    border: 5px solid #127f8d;
+    overflow: hidden;
+    border-radius: 350px;
+    max-width: 539px;
+    max-height: 339px;
+    cursor: pointer;
+}
+
+.section-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-cadre:hover {
+    border-color: #127;
+    border-radius: 10px;
+}
+
+#image-plage {
+    transition: transform 1.5s ease;
+    transform-origin: center center;
+}
+
+.cocotier-image {
+    width: 100px;
+    position: fixed;
+    z-index: 100;
+    bottom: 30px;
+    right: -150px;
+    transition: transform 0.1s ease;
+}
+
