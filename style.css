@@ -76,3 +76,10 @@ body.mode-sombre {
     transition: transform 0.1s ease;
 }
 
+.bouton {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}

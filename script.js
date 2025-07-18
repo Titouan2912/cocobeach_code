@@ -60,3 +60,11 @@ setInterval(() => {
     // appliquer la rotation à l'élément cocotier en css
     cocotier.style.transform = `rotate(${angleRotation}deg)`;
 },50);
+
+ document.getElementById("others").addEventListener("click", function () {
+    window.location.href = "https://oscarduf.github.io/Courbevoie_stage_js/";
+  });
+
+   document.getElementById("resevation").addEventListener("click", function () {
+    window.location.href = "https://titouan2912.github.io/reservation/";
+  });
